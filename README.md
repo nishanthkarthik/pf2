@@ -1,4 +1,6 @@
-This is a port of Lamport's structured proof style (pf2) in typst. The goals of this project are to enable writing short, concise proofs with minimal interaction with external tools.
+# `pf2`
+
+This is a port of Lamport's structured proof style (pf2) in [typst](https://typst.app/docs/reference/syntax/). The goals of this project are to enable writing short, concise proofs with minimal interaction with external tools.
 
 **Typst**
 
@@ -63,6 +65,8 @@ This is a port of Lamport's structured proof style (pf2) in typst. The goals of 
 #### Getting started
 
 Copy the [pf2.typ](./pf2.typ) file into your project, along with [example.typ](./example.typ). Run `typst compile example.typ`.
+
+[Typst syntax reference](https://typst.app/docs/reference/syntax/)
 
 #### License
 
