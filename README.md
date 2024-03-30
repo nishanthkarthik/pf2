@@ -2,6 +2,8 @@
 
 This is a port of Lamport's structured proof style (pf2) in [typst](https://typst.app/docs/reference/syntax/). The goals of this project are to enable writing short, concise proofs with minimal interaction with external tools.
 
+References to proof steps are checked for validity. One may only refer to proof steps which are older siblings or older siblings of ancestors. `#parent` allows referencing the current proof step's parent for assumptions. One can complately avoid this check by using the `#refer()` escape hatch.
+
 **Typst**
 
 ```typ
@@ -67,6 +69,13 @@ This is a port of Lamport's structured proof style (pf2) in [typst](https://typs
 Copy the [pf2.typ](./pf2.typ) file into your project, along with [example.typ](./example.typ). Run `typst compile example.typ`.
 
 [Typst syntax reference](https://typst.app/docs/reference/syntax/)
+
+#### Limitations
+
+Please create an issue if you'd like any of these fixed.
+
+- Only supports short numbering style - `<2>2` instead of `1.1.2`.
+- For really long and deeply nested proofs (3 pages rendered) in a single `#blk`, the incremental compilation times are high (~800ms).
 
 #### License
 
