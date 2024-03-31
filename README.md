@@ -2,7 +2,7 @@
 
 This is a port of Lamport's structured proof style (pf2) in [typst](https://typst.app/docs/reference/syntax/). The goals of this project are to enable writing short, concise proofs with minimal interaction with external tools.
 
-References to proof steps are checked for validity. One may only refer to proof steps which are older siblings or older siblings of ancestors. `#parent` allows referencing the current proof step's parent for assumptions. One can complately avoid this check by using the `#refer()` escape hatch.
+References to proof steps are checked for validity. One may only refer to proof steps which are older siblings or older siblings of ancestors. `#parent` allows referencing the current proof step's parent for assumptions. One can completely avoid this check by using the `#refer()` escape hatch.
 
 **Typst**
 
